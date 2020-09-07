@@ -95,7 +95,6 @@
    }
    .filter__item {
       position: relative;
-      height: 30px;
    }
    .filter__dropdown {
       position: absolute;
@@ -199,15 +198,12 @@
    .card__properties {
       margin-right: 30px;
    }
-   .card__properties p {
-      margin: 3px 0px;
-   }
    .products {
       padding: 51px 0px 32px 0px;
    }
    .products__gallery {
-      -ms-grid-rows: 630px 20px 630px;
-      grid-template-rows: repeat(2, 630px);
+      -ms-grid-rows: 680px 20px 680px;
+      grid-template-rows: repeat(2, 680px);
       gap: 20px;
    }
    .products__wrap {
@@ -266,10 +262,14 @@
    }
    .filter__dropdown {
       left: -100%;
-      padding: 5px 0px 10px 15px;
+		padding: 5px 0px 10px 15px;
+		position: relative;
+		top: 0;
+		left: 0;
    }
    .filter__descr {
-      margin-bottom: 0;
+		margin-bottom: 0;
+		height: auto;
    }
    .filter__dropdown_price {
       position: absolute;
@@ -312,6 +312,15 @@
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
+	}
+	.card__subtitle {
+		max-width: 330px;
+	}
+	.card__properties {
+		margin-right: 50px;
+	}
+	.card__price_main {
+		margin-right: 50px;
    }
    .card1 {
       -ms-grid-column: 1;
@@ -354,7 +363,10 @@
       -ms-grid-row: 3;
       -ms-grid-row-span: 1;
       grid-row: 3/4;
-   }
+	}
+	.button_card {
+		width: 100%;
+	}
    .button_show {
       max-width: 570px;
    }
@@ -391,15 +403,15 @@
    .header {
       padding: 0px 0px 20px 0px;
    }
-   .header__button {
-      display: none;
-   }
    .menu {
       display: none;
    }
    .header__icons {
       display: none;
-   }
+	}
+	.header__button {
+		display: none;
+	}
    .header__icons_mobile {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -445,9 +457,6 @@
       display: none;
    }
    .filter__price-wrap {
-      display: none;
-   }
-   .filter__buttons {
       display: none;
    }
    .filter__dropdown_main {
@@ -499,14 +508,18 @@
       font-size: 8px;
    }
    .luxury {
-      padding: 30px 0px 250px 0px;
+      padding: 30px 0px 220px 0px;
    }
    .luxury__title {
-      font-size: 25px;
+		font-size: 25px;
+		font-size: 25px;
+		line-height: 30px;
+		letter-spacing: 0.02em;
    }
    .luxury__text {
       font-size: 14px;
-      margin: 13px 0px 15px 0px;
+		margin: 13px 0px 15px 0px;
+		line-height: 21px;
    }
    .button_luxury {
       width: 139px;
@@ -541,6 +554,12 @@
    }
    .products__gallery {
       margin-top: 10px;
+	}
+	.card__properties {
+		margin-right: 20px;
+	}
+	.card__price_main {
+		margin-right: 20px;
    }
    .instagram {
       padding: 35px 0px 30px 0px;
