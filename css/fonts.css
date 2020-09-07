@@ -1,0 +1,71 @@
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Regular.eot');
+	src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+		  url('../fonts/Lato-Regular.svg#Lato-Regular') format('svg'),
+		  url('../fonts/Lato-Regular.ttf') format('truetype'),
+		  url('../fonts/Lato-Regular.woff') format('woff'),
+		  url('../fonts/Lato-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+ }
+ @font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Bold.eot');
+	src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+		  url('../fonts/Lato-Bold.svg#Lato-Bold') format('svg'),
+		  url('../fonts/Lato-Bold.ttf') format('truetype'),
+		  url('../fonts/Lato-Bold.woff') format('woff'),
+		  url('../fonts/Lato-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+ }
+
+ @font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Thin.eot');
+	src: url('../fonts/Roboto-Thin.eot?#iefix') format('embedded-opentype'),
+		  url('../fonts/Roboto-Thin.svg#Roboto-Thin') format('svg'),
+		  url('../fonts/Roboto-Thin.ttf') format('truetype'),
+		  url('../fonts/Roboto-Thin.woff') format('woff'),
+		  url('../fonts/Roboto-Thin.woff2') format('woff2');
+	font-weight: 300;
+	font-style: normal;
+ }
+
+ @font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Regular.eot');
+	src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+		  url('../fonts/Roboto-Regular.svg#Roboto-Regular') format('svg'),
+		  url('../fonts/Roboto-Regular.ttf') format('truetype'),
+		  url('../fonts/Roboto-Regular.woff') format('woff'),
+		  url('../fonts/Roboto-Regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+ }
+
+ @font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Medium.eot');
+	src: url('../fonts/Roboto-Medium.eot?#iefix') format('embedded-opentype'),
+		  url('../fonts/Roboto-Medium.svg#Roboto-Medium') format('svg'),
+		  url('../fonts/Roboto-Medium.ttf') format('truetype'),
+		  url('../fonts/Roboto-Medium.woff') format('woff'),
+		  url('../fonts/Roboto-Medium.woff2') format('woff2');
+	font-weight: 500;
+	font-style: normal;
+ }
+
+ @font-face {
+	font-family: 'HelveticaNeue';
+	src: url('../fonts/HelveticaNeueCyr-Roman.eot');
+	src: url('../fonts/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+		  url('../fonts/HelveticaNeueCyr-Roman.svg#HelveticaNeueCyr-Roman') format('svg'),
+		  url('../fonts/HelveticaNeueCyr-Roman.ttf') format('truetype'),
+		  url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff'),
+		  url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+ }
+
