@@ -45,7 +45,10 @@
       display: -ms-flexbox;
       display: flex;
       max-width: 342px;
-   }
+	}
+	.header__contacts {
+		margin: 0px 30px 0px 0px;
+  }
    .header__contacts_mobile a {
       margin: 0px 17px 0px 0px;
    }
@@ -442,7 +445,8 @@
       background-image: url(../img/bg/bg3.jpg);
    }
    .luxury__title {
-      font-size: 40px;
+		font-size: 40px;
+		line-height: 50px;
    }
    .offers__content {
       -ms-flex-wrap: wrap;
@@ -483,7 +487,11 @@
    }
    .modal__content form input {
       width: 250px;
-   }
+	}
+	.arrow__top {
+		width: 60px;
+		height: 60px;
+	}
 }
 
 @media screen and (max-width: 545px) {
@@ -613,7 +621,7 @@
    }
    .arrow__top {
       bottom: 243px;
-      right: 31px;
+		right: 31px;
    }
 }
 @media screen and (min-width: 1440px) {
