@@ -890,12 +890,26 @@
 	-ms-flex-align: center;
 	align-items: center;
 }
-.modal__content form input {
+.modal__input input {
 	margin-bottom: 35px;
 	font-size: 20px;
 	height: 50px;
 	padding-left: 15px;
 	width: 400px;
+}
+.modal__input label {
+	color: red;
+	visibility: hidden;
+	opacity: 0;
+	transition: .4s;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+	-ms-transition: .4s;
+	-o-transition: .4s;
+}
+.modal__input svg {
+	width: 20px;
+	height: 20px;
 }
 .modal__close {
 	font-size: 50px;
