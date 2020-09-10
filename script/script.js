@@ -55,12 +55,48 @@ window.addEventListener('DOMContentLoaded', () => {
    close.addEventListener('click', () => {
       overlay.classList.add('modal__hide');
       overlay.classList.remove('modal__show');
-   })
-})
+	})
+	
+	// удаление введенного в формах текста 
+
+	const form = document.querySelectorAll('.modal__input');
+
+	form.forEach(item => {
+		item.lastElementChild.addEventListener('click', () => {
+			item.firstElementChild.value = "";
+		})
+	})
+
+	// валидация форм
+
+	const buttonSubmit = document.querySelector('.button_modal'),
+	checkbox = document.querySelector('.checkbox_modal input'),
+	checkmark = document.querySelector('.checkbox__wrap_modal');
+	
+	buttonSubmit.addEventListener('click', function() {
+		
+			if(checkbox.checked == false) {
+				checkmark.classList.add('error');
+			}
+			else {
+				checkmark.classList.remove('error');
+				form.forEach(item => {
+					if(item.firstElementChild.value == "") {
+						item.querySelector('.modal__alarm').classList.add('modal__alarm_active');
+					}
+					else {
+						item.querySelector('.modal__alarm').classList.remove('modal__alarm_active');
+					}
+				})
+			}
+		})
+	})
 
 
 
 $(document).ready(function () {
+
+	$('.mask-phone').mask('+7 (999) 999-99-99');
 
    const listItem = $('.header__dropdown_item a');
 
@@ -110,5 +146,5 @@ $(document).ready(function () {
          var dest = $(elClick).offset().top;
          $('html:not(:animated),body:not(:animated)').animate({ scrollTop: dest }, 1000);
       }
-   });
+	});
 })

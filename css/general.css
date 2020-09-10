@@ -1,5 +1,5 @@
 * {
-	font-family: 'Lato', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	font-size: 14px;
 	color: #4F4F4F;
 	font-weight: 400;
@@ -520,6 +520,9 @@
    -o-transition: .4s;
    transition: .4s;
 }
+.checkbox__wrap_modal.error .checkbox__text {
+	color: red;
+}
 .checkmark {
 	position: absolute;
 	top: 4px;
@@ -528,6 +531,9 @@
 	width: 12px;
 	background-color: #fff;
 	border: 1px solid #9B735C;
+}
+.checkbox__wrap_modal.error .checkmark {
+	border: 1px solid red;
 }
 .checkbox input:checked ~ .checkmark {
 	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI2IiB2aWV3Qm94PSIwIDAgOCA2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMSAxTDQgNUw3IDEiIHN0cm9rZT0iIzlCNzM1QyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+Cjwvc3ZnPgo="); 
@@ -890,15 +896,20 @@
 	-ms-flex-align: center;
 	align-items: center;
 }
-.modal__input input {
-	margin-bottom: 35px;
+.modal__input {
+	position: relative;
+	display: flex;
+	flex-direction: column-reverse;
+
+}
+.modal__input_main {
+	margin-bottom: 30px;
 	font-size: 20px;
 	height: 50px;
 	padding-left: 15px;
 	width: 400px;
 }
-.modal__input label {
-	color: red;
+.modal__label {
 	visibility: hidden;
 	opacity: 0;
 	transition: .4s;
@@ -907,9 +918,51 @@
 	-ms-transition: .4s;
 	-o-transition: .4s;
 }
-.modal__input svg {
+.modal__input_main:focus ~ .modal__label {
+	visibility: visible;
+	opacity: 1;
+	transition: .4s;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+	-ms-transition: .4s;
+	-o-transition: .4s;
+}
+.modal__input_main:focus ~ a .modal__erase {
+	visibility: visible;
+	opacity: 1;
+	transition: .4s;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+	-ms-transition: .4s;
+	-o-transition: .4s;
+}
+.modal__input a {
 	width: 20px;
 	height: 20px;
+	position: absolute;
+	right: 10px;
+	top: 35%;
+}
+.modal__erase {
+	width: 20px;
+	height: 20px;
+	visibility: hidden;
+	opacity: 0;
+	transition: .4s;
+	-webkit-transition: .4s;
+	-moz-transition: .4s;
+	-ms-transition: .4s;
+	-o-transition: .4s;
+}
+.modal__alarm {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: red;
+	visibility: hidden;
+}
+.modal__alarm_active {
+	visibility: visible;
 }
 .modal__close {
 	font-size: 50px;
