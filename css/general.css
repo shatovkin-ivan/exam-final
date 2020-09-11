@@ -882,7 +882,7 @@
 	max-width: 550px;
 	width: 100%;
 	min-height: 550px;
-	padding: 40px 20px 40px 20px;
+	padding: 0px 20px 10px 20px;
 }
 .modal__content form {
 	display: -webkit-box;
@@ -900,10 +900,9 @@
 	position: relative;
 	display: flex;
 	flex-direction: column-reverse;
-
 }
 .modal__input_main {
-	margin-bottom: 30px;
+	margin-bottom: 10px;
 	font-size: 20px;
 	height: 50px;
 	padding-left: 15px;
@@ -941,7 +940,7 @@
 	height: 20px;
 	position: absolute;
 	right: 10px;
-	top: 35%;
+	top: 45%;
 }
 .modal__erase {
 	width: 20px;
@@ -962,6 +961,16 @@
 	visibility: hidden;
 }
 .modal__alarm_active {
+	visibility: visible;
+}
+.modal__error {
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: red;
+	visibility: hidden;
+}
+.modal__error_active {
 	visibility: visible;
 }
 .modal__close {

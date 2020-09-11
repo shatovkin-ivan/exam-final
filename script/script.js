@@ -71,7 +71,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
 	const buttonSubmit = document.querySelector('.button_modal'),
 	checkbox = document.querySelector('.checkbox_modal input'),
-	checkmark = document.querySelector('.checkbox__wrap_modal');
+	checkmark = document.querySelector('.checkbox__wrap_modal'),
+	password = document.querySelector('.modal__password'),
+	confirmPassword = document.querySelector('.modal__password_confirm'),
+	error = document.querySelector('.modal__error');
 	
 	buttonSubmit.addEventListener('click', function() {
 		
@@ -86,6 +89,13 @@ window.addEventListener('DOMContentLoaded', () => {
 					}
 					else {
 						item.querySelector('.modal__alarm').classList.remove('modal__alarm_active');
+						if(password.value != confirmPassword.value) {
+							error.classList.add('modal__error_active');
+							confirmPassword.value = '';	
+						}
+						else {
+							error.classList.remove('modal__error_active');
+						}
 					}
 				})
 			}
